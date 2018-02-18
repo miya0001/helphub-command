@@ -1,9 +1,9 @@
 miya0001/helphub-command
 ========================
 
-
-
 [![Build Status](https://travis-ci.org/miya0001/helphub-command.svg?branch=master)](https://travis-ci.org/miya0001/helphub-command)
+
+The WP-CLI commands which migrates/manages for HelpHub.
 
 Quick links: [Using](#using) | [Installing](#installing) | [Contributing](#contributing) | [Support](#support)
 
