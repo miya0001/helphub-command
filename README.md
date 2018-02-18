@@ -9,6 +9,11 @@ Quick links: [Using](#using) | [Installing](#installing) | [Contributing](#contr
 
 ## Using
 
+### Migrates contents from `pages` to `article` for HelpHub.
+
+```
+$ wp helphub migrate
+```
 
 
 ## Installing
