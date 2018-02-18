@@ -8,3 +8,19 @@ Feature: Test that WP-CLI loads.
       """
       Hello world.
       """
+
+  Scenario: Convert all contents from `page` to `article`
+    Given a WP install
+    And I run `wp post generate --post_type=page --count=10`
+    And I run `wp helphub migrate`
+
+    When I run `wp post list --post_type=page --format=count`
+    Then STDOUT should be:
+      """
+      0
+      """
+    When I run `wp post list --post_type=article --format=count`
+    Then STDOUT should be:
+      """
+      11
+      """

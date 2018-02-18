@@ -10,7 +10,7 @@ if ( ! class_exists( 'WP_CLI' ) ) {
  * @subpackage commands/community
  * @maintainer Takayuki Miyauchi
  */
-class HelpHub extends WP_CLI_Command {
+class HelpHub_Command extends WP_CLI_Command {
   /**
    * Migrate contents from `pages` to `article` for HelpHub.
    */
@@ -25,5 +25,3 @@ class HelpHub extends WP_CLI_Command {
     }
   }
 }
-
-WP_CLI::add_command( 'helphub', 'HelpHub' );
