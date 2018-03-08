@@ -13,10 +13,9 @@
         },
         "files": [ "cli.php" ]
     },
-    "require": {
-        "wp-cli/wp-cli": "^1.1.0"
-    },
+    "require": {},
     "require-dev": {
+        "wp-cli/wp-cli": "^1.1.0",
         "behat/behat": "~2.5"
     }
 }
