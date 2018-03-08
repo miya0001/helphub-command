@@ -16,12 +16,13 @@ class HelpHub_Command extends WP_CLI_Command {
    */
   public function migrate() {
     $posts = get_posts( array(
-      'post_type' => 'page',
+      'post_type' => 'post',
       'posts_per_page' => -1,
+			'post_status' => 'any',
     ) );
 
     foreach ( $posts as $post ) {
-        set_post_type( $post->ID, 'article' );
+        set_post_type( $post->ID, 'helphub_article' );
     }
   }
 }
