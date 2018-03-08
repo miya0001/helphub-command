@@ -19,7 +19,7 @@ Feature: Test that WP-CLI loads.
       """
       0
       """
-    When I run `wp post list --post_type=article --format=count`
+    When I run `wp post list --post_type=helphub_article --format=count`
     Then STDOUT should be:
       """
       11
